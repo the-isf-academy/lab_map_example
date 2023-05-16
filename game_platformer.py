@@ -175,6 +175,7 @@ class MyGame(arcade.Window):
 
         for coin in coins_hit:
             coin.remove_from_sprite_lists()
+            self.score += 1
            
 
         # pans camera to the user
