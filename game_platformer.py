@@ -17,8 +17,8 @@ SPRITE_PIXEL_SIZE = 28
 GRID_PIXEL_SIZE = SPRITE_PIXEL_SIZE * TILE_SCALING
 
 # Screen Settings
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 600
+SCREEN_WIDTH = 200
+SCREEN_HEIGHT = 200
 SCREEN_TITLE = "Map Making"
 
 # How many pixels to keep as a minimum margin between the character
