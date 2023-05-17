@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["emma <eqbrown@isf.edu.hk>"]
 readme = "README.md"
-packages = [{include = "lab_games_sampler"}]
+packages = [{include = "lab_map_example"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"

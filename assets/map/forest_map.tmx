@@ -3,7 +3,7 @@
  <editorsettings>
   <export target="forest_map.tmj" format="json"/>
  </editorsettings>
- <tileset firstgid="1" source="../../../map assets/tileset files/Forest Tiles Asset.tsx"/>
+ <tileset firstgid="1" source="forest_tileset.tsx"/>
  <layer id="3" name="Background" width="120" height="40">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
