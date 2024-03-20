@@ -6,19 +6,21 @@
 
 
 import arcade
+from helpers import fixCrash
 
+fixCrash()
 
 # 💻 Try changing these numbers to adjust the scale of the game
-TILE_SCALING = 1
-PLAYER_SCALING = 1
+TILE_SCALING = 2
+PLAYER_SCALING = 2
 
 # Grid Size
 SPRITE_PIXEL_SIZE = 28
 GRID_PIXEL_SIZE = SPRITE_PIXEL_SIZE * TILE_SCALING
 
 # Screen Settings
-SCREEN_WIDTH = 200
-SCREEN_HEIGHT = 200
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 800
 SCREEN_TITLE = "Map Making"
 
 # How many pixels to keep as a minimum margin between the character
