@@ -12,7 +12,7 @@ def fixCrash():
     import site
     import os
     import base64
-    print( site.getsitepackages())
+    # print( site.getsitepackages())
     path = site.getsitepackages()[0] + os.sep + "arcade" + os.sep
     lol = "IiIiCkZ1bmN0aW9ucyBmb3IgY2FsY3VsYXRpbmcgZ2VvbWV0cnkuCiIiIgppbXBvcnQgdGltZQpmcm9tIHR5cGluZyBpbX" \
           "BvcnQgY2FzdAoKZnJvbSBhcmNhZGUgaW1wb3J0IFBvaW50TGlzdAoKCgpfUFJFQ0lTSU9OID0gMgoKCmRlZiBhcmVfcG9s" \
