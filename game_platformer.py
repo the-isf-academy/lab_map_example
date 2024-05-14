@@ -4,6 +4,7 @@
 
 
 import arcade
+from helpers import fixCrash
 
 class MyGame(arcade.Window):
     """Main application class."""
@@ -220,5 +221,6 @@ class MyGame(arcade.Window):
 
 
 if __name__ == "__main__":
+    fixCrash()
     window = MyGame()
     arcade.run()
