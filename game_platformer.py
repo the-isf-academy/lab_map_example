@@ -4,7 +4,8 @@
 
 
 import arcade
-from helpers import fixCrash
+from helpers import fixCrash, scale
+from enemy import Enemy 
 
 class MyGame(arcade.Window):
     """Main application class."""
@@ -85,6 +86,34 @@ class MyGame(arcade.Window):
         # sets the background color
         arcade.set_background_color(arcade.color.BLIZZARD_BLUE)
 
+
+        # SETS UP ENEMIES
+        self.enemy_list = arcade.SpriteList()
+
+        # enemy with boundries
+        enemy1 = Enemy("assets/sprites/slime.png", 1)
+        enemy1.bottom = 500
+        enemy1.left = 600
+
+        # Set boundaries on the left/right the enemy can't cross
+        enemy1.boundary_right = 900
+        enemy1.boundary_left = 600
+
+        # enemies speed
+        enemy1.change_x = 1
+
+        # enemy with no boundries
+        enemy2 = Enemy("assets/sprites/slime.png", 1)
+        enemy2.bottom = 800
+        enemy2.left = 300
+
+        # enemies speed
+        enemy2.change_x = 2
+     
+        # add enemies to list
+        self.enemy_list.append(enemy1)
+        self.enemy_list.append(enemy2)
+
         # Keep player from running through the wall_list layer
         walls = [self.wall_list]
 
@@ -115,6 +144,8 @@ class MyGame(arcade.Window):
 
             # draws the player
             self.player_list.draw()
+            self.enemy_list.draw()
+
             
             # draws the map layers
             self.background_list.draw()
@@ -189,6 +220,8 @@ class MyGame(arcade.Window):
         # Call update on all sprites
         if not self.game_over:
             self.physics_engine.update()
+            self.enemy_list.update()
+
 
 
         # manages if a player hits a coin
