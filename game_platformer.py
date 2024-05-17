@@ -4,7 +4,6 @@
 
 
 import arcade
-from helpers import fixCrash
 
 class MyGame(arcade.Window):
     """Main application class."""
@@ -220,7 +219,5 @@ class MyGame(arcade.Window):
         self.camera.move_to(user_centered, panning_fraction)
 
 
-if __name__ == "__main__":
-    fixCrash()
-    window = MyGame()
-    arcade.run()
+window = MyGame()
+arcade.run()
